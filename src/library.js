@@ -1,4 +1,4 @@
-export { createImg, createA };
+export { createImg, createA, createBtn };
 
 function createImg(src, parent, attachType, id, classList) {
     const img = document.createElement("img");
