@@ -1,4 +1,4 @@
-export { createImg };
+export { createImg, createA };
 
 function createImg(src, target, type, id, classList) {
     const img = document.createElement("img");
@@ -13,5 +13,24 @@ function createImg(src, target, type, id, classList) {
         target.append(img);
     } else if (type == "prepend") {
         target.prepend(img);
+    }
+}
+
+function createA(href, target, type, id, classList, content) {
+    const a = document.createElement("a");
+    a.href = href;
+    if (id) {
+        a.id = id
+    }
+    if (classList) {
+        a.classList = classList
+    }
+    if (content) {
+        a.textContent = content
+    }
+    if (type == "append") {
+        target.append(a);
+    } else if (type == "prepend") {
+        target.prepend(a);
     }
 }
