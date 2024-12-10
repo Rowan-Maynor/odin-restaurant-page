@@ -34,3 +34,21 @@ function createA(href, target, type, id, classList, content) {
         target.prepend(a);
     }
 }
+
+function createBtn(parent, type, id, classList, content) {
+    const btn = document.createElement("button");
+    if (id) {
+        btn.id = id
+    }
+    if (classList) {
+        btn.classList = classList
+    }
+    if (content) {
+        btn.textContent = content
+    }
+    if (type == "append") {
+        parent.append(btn);
+    } else if (type == "prepend") {
+        parent.prepend(btn);
+    }
+}
