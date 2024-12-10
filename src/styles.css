@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    background-color: black;
+}
+
+#header-img {
+    height: 300px;
+    width: auto;
+}
