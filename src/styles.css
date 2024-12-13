@@ -27,7 +27,7 @@ body, html{
     font-family: "Roboto", sans-serif;
     font-size: 3em;
     width: 6em;
-    background-color: #ecb16c;
+    background-color: #FED08B;
     padding-top: var(--vert-padding);
     padding-bottom: var(--vert-padding);
     border-bottom-left-radius: var(--edge-radius);
