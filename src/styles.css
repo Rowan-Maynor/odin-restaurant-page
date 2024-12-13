@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --edge-radius: 12px;
+}
+
 body, html{
     margin: 0;
     background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -23,17 +27,34 @@ body, html{
 }
 
 @keyframes slide {
-    from {height: 1.5em; padding-top: var(--vert-padding);}
-    to {height: 2em; padding-top: calc(var(--vert-padding) + .5em);}
+    from {
+    height: 1.5em;
+    padding-top: var(--vert-padding);
+    background-color: #FED08B;
+    }
+
+    to {
+    height: 2em;
+    padding-top: calc(var(--vert-padding) + .5em);
+    background-color: #ffdfb2;
+    }
 }
 
 @keyframes slide-back {
-    from {height: 2em; padding-top: calc(var(--vert-padding) + .5em);}
-    to {height: 1.5em; padding-top: var(--vert-padding);}
+    from {
+    height: 2em;
+    padding-top: calc(var(--vert-padding) + .5em);
+    background-color: #ffdfb2;
+    }
+
+    to {
+    height: 1.5em;
+    padding-top: var(--vert-padding);
+    background-color: #FED08B;
+    }
 }
 
 .nav-option {
-    --edge-radius: 12px;
     --vert-padding: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 3em;
@@ -63,4 +84,16 @@ nav button:hover {
     text-align: center;
     padding-top: 16px;
     margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#content {
+    width: 1000px;
+    background-color: #FED08B;
+    border: black solid;
+    border-radius: var(--edge-radius);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
