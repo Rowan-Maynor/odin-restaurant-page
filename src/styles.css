@@ -123,3 +123,19 @@ nav button:hover {
     text-align: center;
     border: solid black;
 }
+
+#sunday {
+    border-top-left-radius: var(--edge-radius);
+}
+
+#sunday-hours {
+    border-top-right-radius: var(--edge-radius);
+}
+
+#saturday {
+    border-bottom-left-radius: var(--edge-radius);
+}
+
+#saturday-hours {
+    border-bottom-right-radius: var(--edge-radius);
+}
