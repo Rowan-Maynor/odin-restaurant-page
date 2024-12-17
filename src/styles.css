@@ -101,3 +101,9 @@ nav button:hover {
     font-size: 3em;
     font-weight: 600;
 }
+
+#hours-p {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 400;
+}
