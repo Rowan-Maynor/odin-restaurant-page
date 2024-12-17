@@ -114,6 +114,7 @@ nav button:hover {
 
 #hours-table {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .hours-entry {
