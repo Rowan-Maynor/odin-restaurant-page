@@ -11,6 +11,16 @@ function generateHomePage() {
     createP(hoursTable, "append", "sunday-hours", "hours-entry", "Closed");
     createP(hoursTable, "append", "monday", "hours-entry", "Monday");
     createP(hoursTable, "append", "monday-hours", "hours-entry", "9:00AM - 5:00PM");
+    createP(hoursTable, "append", "tuesday", "hours-entry", "Tuesday");
+    createP(hoursTable, "append", "tuesday-hours", "hours-entry", "9:00AM - 5:00PM");
+    createP(hoursTable, "append", "wednesday", "hours-entry", "Wednesday");
+    createP(hoursTable, "append", "wednesday-hours", "hours-entry", "9:00AM - 5:00PM");
+    createP(hoursTable, "append", "thursday", "hours-entry", "Thursday");
+    createP(hoursTable, "append", "tursday-hours", "hours-entry", "9:00AM - 5:00PM");
+    createP(hoursTable, "append", "friday", "hours-entry", "Friday");
+    createP(hoursTable, "append", "friday-hours", "hours-entry", "9:00AM - 5:00PM");
+    createP(hoursTable, "append", "saturday", "hours-entry", "Saturday");
+    createP(hoursTable, "append", "saturday-hours", "hours-entry", "Closed");
 
 }
 
