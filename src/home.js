@@ -22,7 +22,6 @@ function generateHomePage() {
     createP(hoursTable, "append", "friday-hours", "hours-entry", "9:00AM - 5:00PM");
     createP(hoursTable, "append", "saturday", "hours-entry", "Saturday");
     createP(hoursTable, "append", "saturday-hours", "hours-entry", "Closed");
-
 }
 
 export { generateHomePage }
