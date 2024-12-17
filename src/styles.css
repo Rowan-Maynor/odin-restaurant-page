@@ -115,3 +115,10 @@ nav button:hover {
 #hours-table {
     grid-template-columns: 1fr 1fr;
 }
+
+.hours-entry {
+    font-size: 2em;
+    width: 200px;
+    text-align: center;
+    border: solid black;
+}

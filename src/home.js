@@ -7,10 +7,10 @@ function generateHomePage() {
     createP(content, "append", "hours-p", "", "Hours");
     createDiv(content, "append", "hours-table", "grid-container");
     const hoursTable = document.querySelector("#hours-table");
-    createP(hoursTable, "append", "sunday", "", "Day");
-    createP(hoursTable, "append", "sunday-hours", "", "Time");
-    createP(hoursTable, "append", "monday", "", "Day");
-    createP(hoursTable, "append", "monday-hours", "", "Time");
+    createP(hoursTable, "append", "sunday", "hours-entry", "Sunday");
+    createP(hoursTable, "append", "sunday-hours", "hours-entry", "Time");
+    createP(hoursTable, "append", "monday", "hours-entry", "Monday");
+    createP(hoursTable, "append", "monday-hours", "hours-entry", "Time");
 
 }
 
