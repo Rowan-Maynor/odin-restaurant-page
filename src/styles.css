@@ -96,3 +96,8 @@ nav button:hover {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+#home-tag {
+    font-size: 3em;
+    font-weight: 600;
+}
