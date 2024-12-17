@@ -1,4 +1,4 @@
-export { createImg, createA, createBtn, createP };
+export { createImg, createA, createBtn, createP, createDiv };
 
 function createImg(src, parent, attachType, id, classList) {
     const img = document.createElement("img");
@@ -68,5 +68,23 @@ function createP(parent, attachType, id, classList, textContent) {
         parent.append(p);
     } else if (attachType == "prepend") {
         parent.prepend(p);
+    }
+}
+
+function createDiv(parent, attachType, id, classList, textContent) {
+    const div = document.createElement("div");
+    if (id) {
+        div.id = id
+    }
+    if (classList) {
+        div.classList = classList
+    }
+    if (content) {
+        div.textContent = textContent
+    }
+    if (attachType == "append") {
+        parent.append(div);
+    } else if (attachType == "prepend") {
+        parent.prepend(div);
     }
 }
