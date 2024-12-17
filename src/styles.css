@@ -17,6 +17,10 @@ body, html{
     display: flex;
 }
 
+.grid-container {
+    display: grid;
+}
+
 #main-page {
     flex-direction: column;
     align-items: center;
@@ -106,4 +110,8 @@ nav button:hover {
     margin-top: 10px;
     font-size: 2em;
     font-weight: 400;
+}
+
+#hours-table {
+    grid-template-columns: 1fr 1fr;
 }
