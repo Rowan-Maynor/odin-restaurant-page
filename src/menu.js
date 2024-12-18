@@ -31,8 +31,7 @@ function createMenuItem(parent, src, id, name, price, description) {
          "flex-container menu-text-container");
     const menuTextContainer = document.querySelector(`#${id}-text-container`);
 
-    //creates a container for all the text content
-    //this will be in flex collumn to stack the two sections
+    //creates a container for the name and price
     createDiv(menuTextContainer, "append", `${id}-name-container`,
          "flex-container menu-name-container");
     const menuNameContainer = document.querySelector(`#${id}-name-container`);
