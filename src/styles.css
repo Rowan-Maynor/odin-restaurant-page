@@ -146,3 +146,7 @@ nav button:hover {
 #saturday-hours {
     border-bottom-right-radius: var(--edge-radius);
 }
+
+#menu-title {
+    font-size: 3em;
+}
