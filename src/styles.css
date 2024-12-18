@@ -163,3 +163,7 @@ nav button:hover {
     width: 800px;
     padding: 3px;
 }
+
+#menu-container {
+    flex-direction: column;
+}
