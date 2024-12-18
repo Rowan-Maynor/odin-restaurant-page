@@ -16,7 +16,12 @@ function generateMenuPage() {
 }
 
 function createMenuItem(parent, src, id) {
-    createImg(src, parent, "append", `${id}-img`, "menu-img");
+    //creates container for the menu item
+    createDiv(parent, "append", `${id}-container`, "flex-container menu-item-container");
+    const menuItemContainer = document.querySelector(`#${id}-container`);
+    
+    //adds image to the menu item
+    createImg(src, menuItemContainer, "append", `${id}-img`, "menu-img");
 }
 
 export { generateMenuPage }
