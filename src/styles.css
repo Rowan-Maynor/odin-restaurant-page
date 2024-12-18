@@ -162,8 +162,9 @@ nav button:hover {
     border: solid black;
     border-radius: var(--edge-radius);
     width: 800px;
-    padding: 3px;
+    padding-right: 3px;
     box-shadow: 0px 5px 10px grey;
+    overflow: hidden;
 }
 
 #menu-container, .menu-text-container {
