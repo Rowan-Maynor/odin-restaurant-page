@@ -31,13 +31,18 @@ function createMenuItem(parent, src, id, name, price, description) {
          "flex-container menu-text-container");
     const menuTextContainer = document.querySelector(`#${id}-text-container`);
 
+    //creates a container for all the text content
+    //this will be in flex collumn to stack the two sections
     createDiv(menuTextContainer, "append", `${id}-name-container`,
          "flex-container menu-name-container");
     const menuNameContainer = document.querySelector(`#${id}-name-container`);
-
+    
+    //create both P elements for the name and price
+    //these are shown in the same box
     createP(menuNameContainer, "append", `${id}-name`, "menu-name", name);
     createP(menuNameContainer, "append", `${id}-price`, "menu-price", price);
     
+    //create the final section for details, this is below the name
     createP(menuTextContainer, "append", `${id}-details`,
         "flex-container menu-details", description);
 }
