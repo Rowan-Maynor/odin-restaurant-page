@@ -23,6 +23,13 @@ function generateMenuPage() {
         "Coffee", "$5.00",
         "Choose from our many different styles of brews! Price may vary based on any extra addatives. Ask in store for available options, including our cup of the day!"
     );
+
+    createMenuItem(menuContainer,
+        "https://images.unsplash.com/photo-1647544301296-2c8225f38ea9?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "menu-item-3",
+        "Fresh Bread", "$2.00",
+        "Our bread is baked fresh daily!"
+    )
 }
 
 function createMenuItem(parent, src, id, name, price, description) {

@@ -172,6 +172,10 @@ nav button:hover {
     flex-direction: column;
 }
 
+#menu-container {
+    gap: 20px;
+}
+
 .menu-text-container {
     padding: 15px;
 }
