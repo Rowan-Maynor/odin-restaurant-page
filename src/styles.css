@@ -156,6 +156,7 @@ nav button:hover {
     height: 200px;
     width: 250px;
     object-fit: cover;
+    border-right: solid black;
 }
 
 .menu-item-container {
