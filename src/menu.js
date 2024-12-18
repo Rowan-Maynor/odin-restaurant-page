@@ -16,7 +16,7 @@ function generateMenuPage() {
 }
 
 function createMenuItem(parent, src, id) {
-    createImg(src, parent, "append", id, "menu-img");
+    createImg(src, parent, "append", `${id}-img`, "menu-img");
 }
 
 export { generateMenuPage }
