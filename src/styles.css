@@ -162,6 +162,7 @@ nav button:hover {
     border-radius: var(--edge-radius);
     width: 800px;
     padding: 3px;
+    box-shadow: 0px 5px 10px grey;
 }
 
 #menu-container {
