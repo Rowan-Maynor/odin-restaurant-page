@@ -3,8 +3,13 @@ import { createP, createDiv } from "./library.js"
 const content = document.querySelector("#content");
 
 function generateHomePage() {
+    //home tagline
     createP(content, "append", "home-tag", "", "Come dine in!");
+
+    //address
     createP(content, "append", "address", "", "- 123 Real Address Rd, Atlanta, GA -");
+
+    //hours table
     createP(content, "append", "hours-p", "", "Hours");
     createDiv(content, "append", "hours-table", "grid-container");
     const hoursTable = document.querySelector("#hours-table");
