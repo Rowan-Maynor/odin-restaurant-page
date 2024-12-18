@@ -150,3 +150,9 @@ nav button:hover {
 #menu-title {
     font-size: 3em;
 }
+
+.menu-img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
