@@ -1,13 +1,15 @@
 import "./styles.css";
 import { generateHomePage }  from "./home"
 import { generateMenuPage } from "./menu";
+import { generateAboutUs } from "./about-us"
 
 const homeTab = document.querySelector("#nav-home");
 const menuTab = document.querySelector("#nav-menu");
 const aboutUsTab = document.querySelector("#nav-about-us");
 
 addNavButtonAnimation();
-generateHomePage();
+// generateHomePage();
+generateAboutUs();
 
 function addNavButtonAnimation() {
     const navButton = document.querySelectorAll(".nav-option");

@@ -1,4 +1,4 @@
-export { createImg, createA, createBtn, createP, createDiv, removeChildren };
+export { createImg, createA, createBtn, createP, createDiv, removeChildren, createH1 };
 
 function removeChildren(parent){
     while(parent.firstChild) {
@@ -92,5 +92,23 @@ function createDiv(parent, attachType, id, classList, textContent) {
         parent.append(div);
     } else if (attachType == "prepend") {
         parent.prepend(div);
+    }
+}
+
+function createH1(parent, attachType, id, classList, textContent) {
+    const h1 = document.createElement("h1");
+    if (id) {
+        h1.id = id
+    }
+    if (classList) {
+        h1.classList = classList
+    }
+    if (content) {
+        h1.textContent = textContent
+    }
+    if (attachType == "append") {
+        parent.append(h1);
+    } else if (attachType == "prepend") {
+        parent.prepend(h1);
     }
 }
