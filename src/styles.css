@@ -156,3 +156,10 @@ nav button:hover {
     width: 250px;
     object-fit: cover;
 }
+
+.menu-item-container {
+    border: solid black;
+    border-radius: var(--edge-radius);
+    width: 800px;
+    padding: 3px;
+}
