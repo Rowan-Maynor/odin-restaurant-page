@@ -122,6 +122,7 @@ nav button:hover {
     margin-bottom: 20px;
     border-radius: var(--edge-radius);
     box-shadow: 0px 5px 10px grey;
+    background-color: #ffdfb2;
 }
 
 .hours-entry {
