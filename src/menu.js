@@ -1,8 +1,11 @@
-import { createP, createDiv, createImg } from "./library.js"
+import { createP, createDiv, createImg, removeChildren } from "./library.js"
 
 const content = document.querySelector("#content");
 
 function generateMenuPage() {
+    //clear out initial content
+    removeChildren(content);
+    
     //menu title
     createP(content, "append", "menu-title", "", "Menu");
 

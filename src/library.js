@@ -1,4 +1,10 @@
-export { createImg, createA, createBtn, createP, createDiv };
+export { createImg, createA, createBtn, createP, createDiv, removeChildren };
+
+function removeChildren(parent){
+    while(parent.firstChild) {
+        parent.removeChild(parent.lastChild)
+    }
+}
 
 function createImg(src, parent, attachType, id, classList) {
     const img = document.createElement("img");
