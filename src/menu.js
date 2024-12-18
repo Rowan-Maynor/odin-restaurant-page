@@ -3,7 +3,7 @@ import { createP, createDiv, createImg, removeChildren } from "./library.js"
 const content = document.querySelector("#content");
 
 function generateMenuPage() {
-    //clear out initial content
+    //clear initial content
     removeChildren(content);
     
     //menu title

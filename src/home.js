@@ -1,8 +1,11 @@
-import { createP, createDiv } from "./library.js"
+import { createP, createDiv, removeChildren } from "./library.js"
 
 const content = document.querySelector("#content");
 
 function generateHomePage() {
+    //clear initial content
+    removeChildren(content);
+
     //home tagline
     createP(content, "append", "home-tag", "", "Come dine in!");
 
