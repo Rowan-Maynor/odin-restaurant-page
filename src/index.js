@@ -1,5 +1,6 @@
 import "./styles.css";
-import { generateHomePage}  from "./home"
+import { generateHomePage }  from "./home"
+import { generateMenuPage } from "./menu";
 
 addNavButtonAnimation();
 
@@ -12,4 +13,5 @@ function addNavButtonAnimation() {
     });
 }
 
-generateHomePage();
+// generateHomePage();
+generateMenuPage();
