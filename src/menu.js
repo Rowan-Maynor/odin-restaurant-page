@@ -12,16 +12,34 @@ function generateMenuPage() {
 
     createMenuItem(menuContainer,
          "https://images.unsplash.com/photo-1626920370508-cf4d8f916448?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-         "menu-item-1");
+         "menu-item-1",
+        "Sandwich", "$14.00", 
+        "An eggs and Bacon sandwich on a corrisant bun. Contains dairy products.");
 }
 
-function createMenuItem(parent, src, id) {
+function createMenuItem(parent, src, id, name, price, description) {
     //creates container for the menu item
-    createDiv(parent, "append", `${id}-container`, "flex-container menu-item-container");
+    createDiv(parent, "append", `${id}-container`,
+         "flex-container menu-item-container");
     const menuItemContainer = document.querySelector(`#${id}-container`);
     
     //adds image to the menu item
     createImg(src, menuItemContainer, "append", `${id}-img`, "menu-img");
+
+    //creates a div to contain the two text boxes
+    createDiv(menuItemContainer, "append", `${id}-text-container`,
+         "flex-container menu-text-container");
+    const menuTextContainer = document.querySelector(`#${id}-text-container`);
+
+    createDiv(menuTextContainer, "append", `${id}-name-container`,
+         "flex-container menu-name-container");
+    const menuNameContainer = document.querySelector(`#${id}-name-container`);
+
+    createP(menuNameContainer, "append", `${id}-name`, "menu-name", name);
+    createP(menuNameContainer, "append", `${id}-price`, "menu-price", price);
+    
+    createP(menuTextContainer, "append", `${id}-details`,
+        "flex-container menu-details", description);
 }
 
 export { generateMenuPage }
