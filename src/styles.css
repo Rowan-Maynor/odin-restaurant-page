@@ -166,6 +166,26 @@ nav button:hover {
     box-shadow: 0px 5px 10px grey;
 }
 
-#menu-container, #menu-text-container {
+#menu-container, .menu-text-container {
     flex-direction: column;
+}
+
+.menu-text-container {
+    padding: 10px;
+}
+
+.menu-name-container{
+    margin-bottom: 10px;
+}
+
+.menu-name, .menu-price {
+    font-size: 2em;
+}
+
+.menu-price {
+    margin-left: auto;
+}
+
+.menu-details {
+    font-size: 1em;
 }
