@@ -14,7 +14,15 @@ function generateMenuPage() {
          "https://images.unsplash.com/photo-1626920370508-cf4d8f916448?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
          "menu-item-1",
         "Sandwich", "$14.00", 
-        "An eggs and bacon sandwich on a corrisant bun. Contains dairy products.");
+        "An eggs and bacon sandwich on a corrisant bun. Contains dairy products."
+    );
+
+    createMenuItem(menuContainer,
+        "https://images.unsplash.com/photo-1632599148108-57848660f3af?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "menu-item-2",
+        "Coffee", "$5.00",
+        "Choose from our many different styles of brews! Price may vary based on any extra addatives. Ask in store for available options, including our cup of the day!"
+    );
 }
 
 function createMenuItem(parent, src, id, name, price, description) {
