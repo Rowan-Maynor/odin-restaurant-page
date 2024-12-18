@@ -8,8 +8,7 @@ const menuTab = document.querySelector("#nav-menu");
 const aboutUsTab = document.querySelector("#nav-about-us");
 
 addNavButtonAnimation();
-// generateHomePage();
-generateAboutUs();
+generateHomePage();
 
 function addNavButtonAnimation() {
     const navButton = document.querySelectorAll(".nav-option");
@@ -22,3 +21,4 @@ function addNavButtonAnimation() {
 
 homeTab.addEventListener("click", generateHomePage);
 menuTab.addEventListener("click", generateMenuPage);
+aboutUsTab.addEventListener("click", generateAboutUs);
