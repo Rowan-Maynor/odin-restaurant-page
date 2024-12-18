@@ -2,7 +2,12 @@ import "./styles.css";
 import { generateHomePage }  from "./home"
 import { generateMenuPage } from "./menu";
 
+const homeTab = document.querySelector("#nav-home");
+const menuTab = document.querySelector("#nav-menu");
+const aboutUsTab = document.querySelector("#nav-about-us");
+
 addNavButtonAnimation();
+generateHomePage();
 
 function addNavButtonAnimation() {
     const navButton = document.querySelectorAll(".nav-option");
@@ -13,5 +18,5 @@ function addNavButtonAnimation() {
     });
 }
 
-// generateHomePage();
-generateMenuPage();
+homeTab.addEventListener("click", generateHomePage);
+menuTab.addEventListener("click", generateMenuPage);
